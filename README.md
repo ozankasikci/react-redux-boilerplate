@@ -28,6 +28,6 @@ npm start
 │   └── index.tpl.html 
 │   └── routes.js
 ├── dist                     # Auto generated html/css/javascript code will be placed here
-├── webpack-dev-server       # Express application that provides webpack middleware
-├── src                      # Application source code
+├── webpack-dev-server.js    # Webpack development server for hot reload and continuous build stream 
+├── config.js                # Application config like port number
 ```
