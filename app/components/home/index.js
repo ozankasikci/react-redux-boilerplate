@@ -11,7 +11,7 @@ class Home extends Component {
       <div style={s.container}>
         <p>
           Hello, this is home component. You can press ctrl+h to hide the dock
-          monitor on the right.
+          monitor on the right. Look at utils/dev-tools for its configuration.
         </p>
         <Link to="/about">About</Link>
       </div>
