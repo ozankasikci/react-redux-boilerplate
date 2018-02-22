@@ -15,6 +15,7 @@ npm start
 
 ## Folder Structure
 
+```
 .
 ├── app                      # React/Redux code
 │   └── action
@@ -29,3 +30,4 @@ npm start
 ├── dist                     # Auto generated html/css/javascript code will be placed here
 ├── webpack-dev-server       # Express application that provides webpack middleware
 ├── src                      # Application source code
+```
