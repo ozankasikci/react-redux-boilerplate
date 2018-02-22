@@ -29,5 +29,5 @@ npm start
 │   └── routes.js
 ├── dist                     # Auto generated html/css/javascript code will be placed here
 ├── webpack-dev-server.js    # Webpack development server for hot reload and continuous build stream 
-├── config.js                # Application config like port number
+├── config.js                # Application config (port number, proxy options etc.)
 ```
