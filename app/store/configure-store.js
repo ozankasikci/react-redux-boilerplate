@@ -1,12 +1,15 @@
 import { createStore, applyMiddleware, compose } from 'redux';
 import allReducers from 'reducers';
-import DevTools from 'containers/dev-tools';
+import DevTools from 'utils/dev-tools';
 import { persistState } from 'redux-devtools';
 import { createLogger } from 'redux-logger';
 import thunk from 'redux-thunk';
 
 const enhancer = compose(
-  applyMiddleware(thunk, createLogger()),
+  applyMiddleware(
+    thunk,
+    createLogger()
+  ),
   DevTools.instrument(),
   persistState(
     window.location.href.match(
@@ -14,7 +17,6 @@ const enhancer = compose(
     )
   )
 );
-
 
 export default function configureStore(initialState) {
   const store = createStore(

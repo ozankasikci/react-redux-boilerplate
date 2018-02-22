@@ -1,5 +1,4 @@
 const initialState = {
-  id: 'currentUserId',
 };
 
 export default function(state = initialState, action) {

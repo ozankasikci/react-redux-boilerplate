@@ -2,5 +2,5 @@ dist
 node_modules
 coverage
 webpack.*.js
-*server.js
+webpack-dev-server.js
 app/helpers/index.js

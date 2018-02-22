@@ -1,21 +1,22 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import { Link } from 'react-router';
+import style from './style';
 
 class Home extends Component {
 
   render() {
+    const s = style(this.props, this.state);
+
     return (
-      <div>
-        Hello World!
+      <div style={s.container}>
+        <p>
+          Hello, this is home component. You can press ctrl+h to hide the dock
+          monitor on the right.
+        </p>
+        <Link to="/about">About</Link>
       </div>
     );
   }
-
 }
-
-Home.propTypes = {
-  questions: PropTypes.array.isRequired,
-  typing: PropTypes.string.isRequired,
-};
 
 export default Home;

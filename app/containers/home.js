@@ -1,22 +1,13 @@
 import { connect } from 'react-redux';
-import { actions } from 'actions/index';
 import Home from 'components/home/';
 import { bindActionCreators } from 'redux';
-import { currentUserIdSelector } from 'selectors/current-user-selector';
 
-function mapStateToProps(state) {
-  return {
-    currentUserId: currentUserIdSelector(state),
-  };
+function mapStateToProps() {
+  return {};
 }
 
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators(
-    {
-      createQuestion: actions.question.create,
-      setTyping: actions.question.type,
-    },
-    dispatch);
+  return bindActionCreators({}, dispatch);
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home);

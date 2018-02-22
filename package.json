@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "",
-    "start": "node server",
+    "start": "node webpack-dev-server",
     "build": "rimraf dist && webpack --config ./webpack.production.config.js --progress --profile --colors",
     "eslint": "eslint ."
   },
@@ -18,7 +18,6 @@
   "author": "Jean-Pierre Sierens",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.16.1",
     "extract-text-webpack-plugin": "^2.1.0",
     "file-loader": "^0.9.0",
     "install": "^0.10.1",
@@ -33,10 +32,9 @@
     "react-router-dom": "^4.1.1",
     "react-router-redux": "^4.0.4",
     "react-tap-event-plugin": "^2.0.1",
+    "reactcss": "^1.2.3",
     "redux": "^3.5.2",
-    "redux-fast-actions": "^0.1.0",
     "redux-logger": "^3.0.6",
-    "redux-logic": "^0.12.3",
     "redux-thunk": "^2.2.0"
   },
   "devDependencies": {

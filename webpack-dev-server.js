@@ -4,7 +4,7 @@ const webpackConfig = require('./webpack.config');
 const { webpackPort } = require('./config');
 
 new WebpackDevServer(webpack(webpackConfig), {
-    // enable this to be able make requests through proxy
+    // enable this to be able make requests through proxy to an api
     // proxy: {
     //   '/api': {
     //     target: "http://localhost:3075",
@@ -37,5 +37,5 @@ new WebpackDevServer(webpack(webpackConfig), {
         console.log(err);
     }
 
-  console.log(`Listening at localhost:${webpackPort}`);
+  console.log(`Listening at http://localhost:${webpackPort}`);
 });
